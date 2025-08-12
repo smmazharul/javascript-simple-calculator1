@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 320px;
+  text-align: center;
+}
+
+.calculator-card h1 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #3b82f6;
+  outline: none;
+}
+
+.button-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
